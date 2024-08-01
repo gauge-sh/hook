@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/gauge-sh/tach/v0.9.2/public/tach-yml-schema.json
+modules:
+  - path: core
+    strict: true
+    depends_on: []
+  - path: main
+    depends_on:
+      - path: core
+exclude:
+  - .*__pycache__
+  - .*egg-info
+  - docs
+  - tests
+  - venv
+source_roots:
+  - .
